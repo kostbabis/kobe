@@ -1,0 +1,49 @@
+apiVersion: kobedataset.kobe.com/v1alpha1
+kind: KobeDataset
+metadata:
+  name: nodownload
+spec:
+  # Add fields here
+  image: nginx
+  toDownload: true
+  dumbDirectory: /data/
+  downloadFrom: this is a download link
+  imagePullPolicy: Always
+  count: 1
+  group: kobe
+  port: 80
+
+---
+
+apiVersion: kobedataset.kobe.com/v1alpha1
+kind: KobeDataset
+metadata:
+  name: nodownload1
+spec:
+  # Add fields here
+  image: nginx
+  toDownload: true
+  dumbDirectory: /data/
+  downloadFrom: this is a download link
+  imagePullPolicy: Always
+  count: 1
+  group: kobe
+  port: 80
+
+
+---
+
+apiVersion: kobedataset.kobe.com/v1alpha1
+kind: KobeDataset
+metadata:
+  name: nodownload2
+spec:
+  # Add fields here
+  image: nginx
+  toDownload: true
+  dumbDirectory: /data/
+  downloadFrom: this is a download link
+  imagePullPolicy: Always
+  count: 1
+  group: kobe
+  port: 80
